@@ -1,0 +1,106 @@
+.container {
+ border: 3px solid black;
+ border-radius: 5px;
+ height: 50vh;
+ overflow: visible;
+}
+
+.focusStatic {
+height: 4vh;
+width: 150%;
+border: 3px solid grey;
+background-color: blue;
+opacity: 35%;
+margin-left: -15vw;
+pointer-events: none
+}
+
+.focusMoving {
+  height: 4vh;
+  width: 150%;
+  border: 3px solid grey;
+  background-color: blue;
+  opacity: 35%;
+  margin-left: -15vw;
+  pointer-events: none;
+  animation: moveFocusDown 40s; 
+  animation-timing-function: steps(10, jump-start);
+
+}
+
+@keyframes moveFocusDown {
+  0% {
+    transform: translateY(0px)
+  }
+  100% {
+    transform: translateY(40vh)
+  }
+}
+
+.textStatic {
+  text-align: justify;
+  width: 95%;
+  height: 95%;
+  margin-top: -5px;
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  font-size: 3vh;
+  font-family: inherit;
+
+}
+.slowScroll {
+  text-align: justify;
+  animation: moveDownTop 80s infinite linear;
+  width: 95%;
+  height: 95%;
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  font-size: 3vh;
+  font-family: inherit;
+  pointer-events: none;
+}
+.normalScroll {
+  text-align: justify;
+  animation: moveDownTop 60s infinite linear;
+  width: 95%;
+  height: 95%;
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  font-size: 3vh;
+  font-family: inherit;
+  pointer-events: none;
+}
+
+.fastScroll {
+  text-align: justify;
+  animation: moveDownTop 40s infinite linear;
+  width: 95%;
+  height: 95%;
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  font-size: 3vh;
+  font-family: inherit;
+  pointer-events: none;
+}
+
+
+@keyframes moveDownTop {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-40vh);
+  }
+}
