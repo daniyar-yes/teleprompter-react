@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 
-
 const Teleprompter = () => {
   
   const INITIAL_TEXT = `React is a JavaScript-based UI development library. Facebook and an open-source developer community run it. Although React is a library rather than a language, it is widely used in web development. 
@@ -22,10 +21,7 @@ const Teleprompter = () => {
   const handleStop = () => {
     let el = document.getElementById('focus')
     el.className = el.className === `focusMoving` ? 'focusStatic' : 'focusStatic'
-
   }
-
-
   
   return (
     <>
@@ -42,9 +38,6 @@ const Teleprompter = () => {
             <button onClick={handleStop}>
               Stop
             </button>
-          
-         
-        
     </>
   )
 }
