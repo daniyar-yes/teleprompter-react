@@ -3,19 +3,10 @@ import React from 'react'
 
 import Teleprompter from './Teleprompter'
 
-
-
-
-function App() {
-  
+function App() {  
   return (
-    <>
-      
-      
-        <Teleprompter/>
-        
-        
-      
+    <>   
+      <Teleprompter/>
     </>
   )
 }
