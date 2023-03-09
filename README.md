@@ -1,7 +1,10 @@
-Right now the solution is even simpler then before, it uses CSS animation / keyframes.
-I've changed teleprompter logic from "scrollBy" method with line-by-line scrolling to proper CSS animation.
-Start and Stop buttons change className from static to moving classes.
-Selector of the speed keeps State of a speed selected as a string, which refers to animated CSS classes: slow, normal and fast scroll. All styles in App.css.
+This React SPA allows adding any text and use Speech Recognition to assist you with teleprompter function.
+As you read, the text will be recognized by the Speech Recognition Web API and compare your words with the ones from the text.
+
+If they match, the completed word will be highlighted, meaning that you can move on to another word.
+Control can also be done via Mouse Wheel if you prefer that over Speech control.
+
+It's super easy to understand when you actually use it, so [give it a try here](https://daniyar-yes.github.io/teleprompter-react/)
 
 # Getting Started with Create React App
 
